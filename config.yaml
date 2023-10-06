@@ -1,6 +1,6 @@
 # https://github.com/Ice-Hazymoon/hugo-theme-luna/blob/master/exampleSite/config.yaml
 
-baseURL: zwack.rocks
+baseURL: https://zwack.rocks
 languageCode: en-us
 defaultContentLanguage: en-us
 title: "Personal Website"
@@ -14,7 +14,7 @@ deployment:
   targets:
     name: "Live Blog"
     URL: "s3://zwack-blog-website?region=us-east-1"
-    cloudFrontDistributionID: "EARKPVUM5DF03"
+    cloudFrontDistributionID: "E3HGS3RGDAC6UC"
 
 paginate: 10
 
