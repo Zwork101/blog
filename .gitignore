@@ -1,0 +1,10 @@
+# Node.js Modules
+node_modules/
+
+# Hugo Static Site
+public/
+resources/
+.hugo_build.lock
+
+# VS Code
+quickstart.code-workspace
