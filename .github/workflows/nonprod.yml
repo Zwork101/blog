@@ -44,15 +44,15 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --minify
+            --minify && hugo deploy --dryRun
 
   # Deployment job
-  deploy:
-    environment: aws
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Fake deploy to S3 Bucket
-        id: deployment
-        run: |
-          hugo deploy -dryRun
+  # deploy:
+  #   environment: aws
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Fake deploy to S3 Bucket
+  #       id: deployment
+  #       run: |
+  #         hugo deploy -dryRun
